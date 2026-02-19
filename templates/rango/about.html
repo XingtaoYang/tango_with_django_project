@@ -1,0 +1,9 @@
+{% extends 'rango/base.html' %}
+{% load static %}
+{% block title %}About - Rango{% endblock %}
+
+{% block content %}
+<h2>Rango Says: Here is the about page.</h2>
+<img src="{% static 'rango/images/about.jpg' %}" alt="Rango 图片" width="300">
+<p><a href="{% url 'index' %}">Home</a></p>
+{% endblock %}

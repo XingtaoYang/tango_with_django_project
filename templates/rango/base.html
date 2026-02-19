@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <title>{% block title %}Rango{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'rango/css/style.css' %}">
+</head>
+<body>
+    <div id="header">
+        {% block header %}
+        <h1>Rango</h1>
+        {% endblock %}
+    </div>
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <div id="footer">
+        {% block footer %}
+        <hr>
+        <p>© 2026 Rango</p>
+        {% endblock %}
+    </div>
+</body>
+</html>
